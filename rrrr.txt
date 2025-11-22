@@ -1,2 +1,7 @@
 this is new file
+<<<<<<< HEAD
 I need to learn
+=======
+and I'm ADEEL
+
+>>>>>>> 10c27729d589f22aa2a36730c30d1bc8bbdc6cb7
