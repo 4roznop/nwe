@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+  <div class="box scale"><i>CLICK HERE!</i></div>
+  <div class="box rotate">Rotate</div>
+  <div class="box translate">Translate</div>
+  <div class="box skew">Skew</div>
+</div>
+<style>
+    body {
+  font-family:"Poppins", "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background: #1a9494;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  font-weight: bold;
+}
+
+.scale:hover {
+  transform: scale(1.25);
+}
+
+.rotate:hover {
+  transform: rotate(80deg);
+}
+
+.translate:hover {
+  transform: translate(-20px, -20px);
+}
+
+.skew:hover {
+  transform: skew(-15deg, 5deg);
+}
+
+</style>
+</body>
+</html>

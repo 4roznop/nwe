@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Flexbox Examples</h2>
+
+
+<div class="section-title">Flex Direction</div>
+<div class="box flex-direction-row">
+  <div>ITEM1</div><div>ITEM2</div><div>ITEM3</div>
+</div>
+
+<div class="box flex-direction-column">
+  <div>A</div><div>B</div><div>C</div>
+</div>
+
+
+<div class="section-title">Flex Wrap</div>
+<div class="box flex-wrap">
+  <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+</div>
+
+
+<div class="section-title">Justify Content</div>
+<div class="box justify-center">
+  <div>Box</div><div>Box</div><div>Box</div>
+</div>
+
+<div class="box justify-space-between">
+  <div>Box</div><div>Box</div><div>Box</div>
+</div>
+
+
+<div class="section-title">Align Items</div>
+<div class="box tall align-center">
+  <div>Box</div><div>Box</div><div>Box</div>
+</div>
+
+
+<div class="section-title">Align Content</div>
+<div class="box wrap align-content-center">
+  <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+</div>
+
+
+<div class="section-title">Flex Grow / Shrink / Basis / Order / Align-self</div>
+<div class="box item-properties">
+  <div class="grow">Grow</div>
+  <div class="shrink">Shrink</div>
+  <div class="basis">Basis</div>
+  <div class="order">Order</div>
+  <div class="self">Self</div>
+</div>
+<style>
+    body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+.section-title {
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+
+.box {
+    align-items: baseline;
+  display: flex;
+  background: #000000;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.box div {
+  background: #048881;
+  color: white;
+  padding: 15px;
+}
+
+
+.flex-direction-row { flex-direction: row; }
+.flex-direction-column { flex-direction: column; }
+
+
+.flex-wrap {
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+
+.justify-center { justify-content: center; }
+.justify-space-between { justify-content: space-between; }
+
+
+.tall { height: 150px; }
+.align-center { align-items: center; }
+
+
+.wrap {
+  flex-wrap: wrap;
+  height: 150px;
+}
+.align-content-center { align-content: center; }
+
+
+.item-properties div { width: 80px; }
+
+.grow { flex-grow: 1; background: #4caf50; }
+.shrink { flex-shrink: 2; background: #ff5722; }
+.basis { flex-basis: 150px; background: #9c27b0; }
+.order { order: -1; background: #03a9f4; }
+.self { align-self: flex-end; background: #795548; }
+
+</style>
+</body>
+</html>
